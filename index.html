@@ -4,95 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>OWEB Homework</title>
 </head>
 <body>
     <fieldset>
-        <div>
+        <div class="restaurant-info">
             <h1>Dado Tea Lunch Special</h1>
             <p>Monday through Friday <br> 11am - 3pm <br> $9.95 (plus tax) </p>
             <p>Includes sandwich, snack and drink.</p>
         </div>
         <form>
-            <fieldset>
+            <fieldset class="order-fs">
                 <legend>Order Information</legend>
-                <div>
+                <div class="customer-info">
                     <br>
                     <label><b>Name</b></label>
                     <br>
-                    <input name="name" type="text"> 
+                    <input id="customer-name" name="name" type="text"> 
                 </div>
                 <br>
-                <div>
+                <div class="order-here">
                     <input name="food"  type="radio">
                     <label>Here</label>
                 </div>
-                <div>
+                <div class="order-to-go">
                     <input name="food"  type="radio">
                     <label>To Go</label>
                 </div>
                 <br>
             </fieldset>
-            <fieldset>
+            <fieldset class="sandwiches-fs">
                 <legend>Sandwiches</legend>
                 <br>
-                <div>
-                    <label><b>Monday</b></label>
-                    <div>
-                        <input name="monday"  type="radio">
-                        <label>Tomato Mozzarella</label>
+                <label><b>Monday</b></label>
+                <div class="monday">
+                    <div class="tomato-mozzarella">
+                        <label class="sandwiches-labels"><input name="monday"  type="radio">Tomato Mozzarella</label>
                     </div>
-                    <div>
-                        <input name="monday"  type="radio">
-                        <label>Chicken Salad</label>
+                    <div class="chicken-salad">
+                        <label class="sandwiches-labels"><input name="monday"  type="radio">Chicken Salad</label>
                     </div>
                 </div>
                 <br>
-                <div>
-                    <label><b>Tuesday</b></label>
-                    <div>
-                        <input name="tuesday"  type="radio">
-                        <label>Greek Salad Wrap</label>
+                <label><b>Tuesday</b></label>
+                <div class="tuesday">
+                    <div class="greek-salad">
+                        <label class="sandwiches-labels"><input name="tuesday"  type="radio">Greek Salad Wrap</label>
                     </div>
-                    <div>
-                        <input name="tuesday"  type="radio">
-                        <label>Toto Wrap</label>
+                    <div class="toto-wrap">
+                      <label class="sandwiches-labels"><input name="tuesday"  type="radio">Toto Wrap</label>
                     </div>
                 </div>
                 <br>
-                <div>
-                    <label><b>Wednesday</b></label>
-                    <div>
-                        <input name="wednesday"  type="radio">
-                        <label>Red Pepper Hummus</label>
+                <label><b>Wednesday</b></label>
+                <div class="wednesday">
+                    <div class="pepper-hummus">
+                        <label class="sandwiches-labels"><input name="wednesday"  type="radio">Red Pepper Hummus</label>
                     </div>
-                    <div>
-                        <input name="wednesday"  type="radio">
-                        <label>Roasted Turkey</label>
+                    <div class="roasted-turkey">
+                        <label class="sandwiches-labels"><input name="wednesday"  type="radio">Roasted Turkey</label>
                     </div>
                 </div>
                 <br>
-                <div>
-                    <label><b>Thursday</b></label>
-                    <div>
-                        <input name="thursday"  type="radio">
-                        <label>Carrot-Ginger Hummus Wrap</label>
+                <label><b>Thursday</b></label>
+                <div class="thursday">
+                    <div class="carrot-hummus">
+                        <label class="sandwiches-labels"><input name="thursday"  type="radio">Carrot-Ginger Hummus Wrap</label>
                     </div>
-                    <div>
-                        <input name="thursday"  type="radio">
-                        <label>Egg Salad</label>
+                    <div class="egg-salad">
+                        <label class="sandwiches-labels"><input name="thursday"  type="radio">Egg Salad</label>
                     </div>
                 </div>
                 <br>
-                <div>
-                    <label><b>Friday</b></label>
-                    <div>
-                        <input name="friday"  type="radio">
-                        <label>Dado Wrap</label>
+                <label><b>Friday</b></label>
+                <div class="friday">
+                    <div class="dado-wrap">
+                        <label class="sandwiches-labels"><input name="friday"  type="radio">Dado Wrap</label>
                     </div>
-                    <div>
-                        <input name="friday"  type="radio">
-                        <label>Tuna Salad</label>
+                    <div class="tuna-salad">
+                        <label class="sandwiches-labels"><input name="friday"  type="radio">Tuna Salad</label>
                     </div>
                 </div>
                 <br>
@@ -103,29 +94,29 @@
                 </div>
                 <br>
             </fieldset>
-            <fieldset>
+            <fieldset class="snack-fs">
                 <br>
                 <legend>Snack</legend>
                 <label><b>Snacks</b></label>
-                <div>
+                <div class="apple">
                     <input name="snacks"  type="radio">
                     <label>Apple</label>
                 </div>
-                <div>
+                <div class="banana">
                     <input name="snacks"  type="radio">
                     <label>Banana</label>
                 </div>
-                <div>
+                <div class="potato-chips">
                     <input name="snacks"  type="radio">
                     <label>Potato Chips</label>
                 </div>
                 <br>
             </fieldset>
-            <fieldset>
+            <fieldset class="drink-fs">
                 <br>
                 <legend>Drink</legend>
                 <label><b>Drinks</b></label>
-                <div>
+                <div class="drinks">
                     <select id="drinks" name="drinks">
                         <option value="hot-coffee">Hot Coffee</option>
                         <option value="iced-coffee">Iced Coffee</option>
@@ -145,8 +136,8 @@
                 <br>
             </fieldset>
             <br>
-            <div>
-                <input type="submit" value="Place order">
+            <div class="btn">
+                <input type="submit" value="Place order" class="submit-btn">
             </div>
         </form>
     </fieldset>

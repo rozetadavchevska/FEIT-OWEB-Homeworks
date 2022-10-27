@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #393939;
+    color:aliceblue;
+    font-family: 'Poppins';
+}
+
+input{
+    cursor: pointer;
+}
+
+fieldset{
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.order-fs, .sandwiches-fs, .snack-fs, .drink-fs{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.restaurant-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#customer-name{
+    margin-top: 10px;
+}
+
+#customer-name, #drinks, .submit-btn{
+    border-radius: 10px;
+    padding: 5px;
+    border-style: none;
+}
+
+.monday, .tuesday, .wednesday, .thursday, .friday{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.tomato-mozzarella, 
+.chicken-salad, 
+.greek-salad, 
+.toto-wrap,
+.pepper-hummus,
+.roasted-turkey,
+.carrot-hummus,
+.egg-salad,
+.dado-wrap,
+.tuna-salad{
+    height: 350px;
+    width: 350px;
+    margin: 10px;
+    padding: 10px;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.sandwiches-labels{
+    cursor: pointer;
+    background-color: #393939;
+    padding: 11px;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+.tomato-mozzarella{
+    background-image: url('images/tomato-mozzarella.jpg');
+}
+
+.chicken-salad{
+    background-image: url('images/chicken-salad.jpg');
+}
+
+.greek-salad{
+    background-image: url('images/greek-salad-wrap.jpg');
+}
+
+.toto-wrap{
+    background-image: url('images/toto-wrap.jpg');
+}
+
+.pepper-hummus{
+    background-image: url('images/red-pepper-hummus.jpg');
+}
+
+.roasted-turkey{
+    background-image: url('images/roasted-turkey.jpg');
+}
+
+.carrot-hummus{
+    background-image: url('images/carrot-ginger-hummus-wrap.jpg');
+}
+
+.egg-salad{
+    background-image: url('images/egg-salad.jpg');
+}
+
+.dado-wrap{
+    background-image: url('images/dado-wrap.jpg');
+}
+
+.tuna-salad{
+    background-image: url('images/tuna-salad.jpg');
+}
+
+.apple, .banana, .potato-chips{
+    margin: 10px;
+}
+
+.apple{
+    margin-top: 10px;
+}
+
+.drinks{
+    margin-top: 10px;
+}
+
+.submit-btn{
+    font:inherit;
+    padding:10px;
+}
+
+@media screen and (min-width: 480px ) and (max-width: 768px) {
+    .order-fs, .sandwiches-fs, .snack-fs, .drink-fs{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+   
+    .monday, .tuesday, .wednesday, .thursday, .friday{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tomato-mozzarella, 
+    .chicken-salad, 
+    .greek-salad, 
+    .toto-wrap,
+    .pepper-hummus,
+    .roasted-turkey,
+    .carrot-hummus,
+    .egg-salad,
+    .dado-wrap,
+    .tuna-salad{
+        height: 250px;
+        width: 250px;
+        margin: 10px;
+        padding: 10px;
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+    .sandwiches-labels{
+        padding: 13px;
+        font-size: 14px;
+    }
+}
