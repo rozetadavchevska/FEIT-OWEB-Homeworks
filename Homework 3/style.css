@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+body{
+    font-family: 'Quicksand';
+}
+
+.text{
+    text-align: center;
+}
+
+#start-btn{
+    font: inherit;
+    font-size: 18px;
+    background-color:#700000;
+    color:#ffffff;
+    border:none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+table{ 
+    width:100%;
+}
+
+table, td ,th{ 
+    padding: 5px;
+}
+
+td{   
+    text-align:center;
+    color: black;
+    background-color:white;
+    padding: 10px;
+}
+
+.rabbit{
+    font-weight: bold;
+    color: red;
+}
+
+.turtle{
+    font-weight: bold;
+    color: green;
+}
